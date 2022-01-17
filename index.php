@@ -22,6 +22,8 @@ echo $user_IP;
 $headers = apache_request_headers();
 
 foreach ($headers as $header => $value) {
-    echo "$header: $value <br />\n";
+    if ($header==“forwarded”) {
+    echo "$value <br />\n";
+    }
 }
 ?>
