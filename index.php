@@ -1,8 +1,12 @@
 <?php
 print "Hello World !!! PHP version is " . PHP_VERSION . "\n";
 ?>
-
-
+<br>
+<?php
+print “HTTP_X_FORWARDED_FOR”;
+echo $_SERVER["HTTP_X_FORWARDED_FOR"];  
+?>
+<br>
 <?php 
 print "REMOTE_ADDR:";
 $ip=$_SERVER["REMOTE_ADDR"];
