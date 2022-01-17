@@ -19,7 +19,8 @@ echo $user_IP;
 
 
 <?php
-$headers = apache_request_headers();
+$headers = get_headers( void )
+echo $headers;
 foreach ($headers as $header => $value) {
     echo "$header: $value <br />\n";
 }
