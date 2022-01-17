@@ -1,23 +1,15 @@
+<br>
+<br>
+<br>
+<center>
 <?php
-print "Hello World !!! PHP version is " . PHP_VERSION . "\n";
+print "Hello World";
 ?>
-
-<br>
-<?php 
-print "FORWARDED:";
-$ip=$_SERVER["HTTP_X_FORWARDED_FOR"];
-echo $ip;
-?> 
-
-<br>
-<?php
-print "$user_IP:";
-$user_IP = ($_SERVER["HTTP_VIA"]) ? $_SERVER["HTTP_X_FORWARDED_FOR"] : $_SERVER["REMOTE_ADDR"];
-$user_IP = ($user_IP) ? $user_IP : $_SERVER["REMOTE_ADDR"];  
-echo $user_IP;
-?>
+</center>
 <br>
 <br>
+<br>
+<center>
 <?php
 $headers = apache_request_headers();
 
@@ -27,3 +19,4 @@ foreach ($headers as $header => $value) {
     }
 }
 ?>
+</center>
