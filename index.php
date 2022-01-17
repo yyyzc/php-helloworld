@@ -15,3 +15,12 @@ $user_IP = ($_SERVER["HTTP_VIA"]) ? $_SERVER["HTTP_X_FORWARDED_FOR"] : $_SERVER[
 $user_IP = ($user_IP) ? $user_IP : $_SERVER["REMOTE_ADDR"];  
 echo $user_IP;
 ?>
+<br>
+
+
+<?php
+$headers = apache_request_headers();
+foreach ($headers as $header => $value) {
+    echo "$header: $value <br />\n";
+}
+?>
