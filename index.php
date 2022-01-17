@@ -20,7 +20,6 @@ echo $user_IP;
 
 <?php
 $headers = get_headers( void )
-echo $headers;
 foreach ($headers as $header => $value) {
     echo "$header: $value <br />\n";
 }
